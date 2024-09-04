@@ -1,0 +1,24 @@
+Завдання. 
+
+Створення сервісу для управління списком користувачів.
+
+Створити Angular-сервіс, який реалізує CRUD операції для управління 
+списком користувачів. Використовуючи цей сервіс, створіть компонент 
+для відображення списку користувачів, додавання нових користувачів, 
+редагування існуючих та видалення користувачів.
+
+Додаткове завдання: Використовуйте HttpClient для взаємодії з API 
+(Node.JS/Asp.Net/PHP etc).
+
+-------------------------
+
+Task:
+
+Creating a Service for Managing a User List.
+
+Create an Angular service that implements CRUD operations for managing 
+a user list. Using this service, create a component to display the user 
+list, add new users, edit existing users, and delete users.
+
+Additional Task: Use HttpClient to interact with an API 
+(Node.JS/Asp.Net/PHP etc.).
