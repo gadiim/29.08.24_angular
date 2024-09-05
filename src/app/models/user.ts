@@ -9,4 +9,4 @@ export class User {
         this.surname = surname;
         this.birth = birth;
     };
-}
+};

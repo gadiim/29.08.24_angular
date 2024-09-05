@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>BirthDay</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.name}}</td>
+      <td>{{user.surname}}</td>
+      <td>{{user.birth | date }}</td>
+      <td>
+        <button (click)="editUser(user.id)" class="edit-button">
+          <img src="assets/icons/person_edit.svg" alt="person_edit icon" />
+        </button>
+      </td>
+      <td>
+        <button (click)="deleteUser(user.id)" class="remove-button">
+          <img src="assets/icons/person_remove.svg" alt="person_remove icon" />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

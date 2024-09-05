@@ -1,0 +1,20 @@
+<fieldset>
+  <legend *ngIf="user.id">Edit User</legend>
+  <legend *ngIf="!user.id">Add User</legend>
+
+  <form (ngSubmit)="onSave()">
+    <div>
+      <label for="name">name:</label>
+      <input id="user-name" [(ngModel)]="user.name" name="name" required>
+    </div>
+    <div>
+      <label for="surname">surname:</label>
+      <input id="user-surname" [(ngModel)]="user.surname" name="surname" required>
+    </div>
+    <div>
+      <label for="birth">birth:</label>
+      <input id="user-birth" [(ngModel)]="user.birth" name="birth" type="date" required>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</fieldset>
